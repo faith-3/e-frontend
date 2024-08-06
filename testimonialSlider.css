@@ -1,0 +1,32 @@
+.testimonial-card {
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease, z-index 0.3s ease;
+    position: relative;
+    margin: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slick-center .testimonial-card {
+    transform: scale(1.1);
+    filter: blur(0px);
+    z-index: 2;
+}
+
+.slick-slide {
+    transition: transform 0.3s ease, filter 0.3s ease, z-index 0.3s ease;
+    z-index: 0;
+}
+
+.slick-slide-width{
+    width: 400px;
+}
+
+.slick-slide:not(.slick-center) {
+    transform: scale(0.8);
+    filter: blur(2px);
+    z-index: 0;
+}
